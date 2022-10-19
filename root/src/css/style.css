@@ -1,0 +1,270 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+    background-color: #000;
+}
+main {
+    width: 80%;
+    margin: auto;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+h1 {
+    font-family: 'Rock Salt', cursive;
+    font-size: 2rem;
+}
+span {
+    color: #b31d1d;
+    text-shadow: #fff 1px 2px 5px;
+}
+h2 ,h1{
+    color: #fff;
+    text-align: center;
+}
+h3 {
+    color: #f2cb13;
+    text-align: center;
+}
+p {
+    color: #969696;
+    text-align: center;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+header{
+    background-color:#000;
+    padding: 2rem 0 ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: solid 20px #f2cb13;
+    height: 10vh;
+}
+header div {
+    width: 40vw;
+    height: 100%;
+}
+header .logo {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: left;
+}
+svg{
+    height: 6vh;
+    margin-right: 1rem;
+    fill: #b31d1d;
+}
+nav ul{
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    height: 100%;
+}
+nav li {
+    padding-top: 4vh;
+    width: 100%;
+    height: 6vh;
+    text-align: center;
+}
+nav li a{
+    text-decoration: none;
+    color: #fff;
+}
+nav li:hover{
+    background-color: #b31d1d;
+}
+section {
+    background-color: #171717;
+    padding: 2rem;
+}
+article {
+    background-color: #171717;
+    padding: 3rem 0;
+    height: 80vh;
+}
+article img {
+    margin-right: 1rem;
+    border-radius: 40px 0;
+    height: 50vh;
+}
+article div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10vh;
+}
+section article:nth-child(1) div{
+    display: flex;
+    flex-direction: column;
+}
+section article:nth-child(1) img{
+    height: 40vh;
+}
+footer {
+    background-color: #b31d1d;
+    padding: 2rem;
+    
+}
+footer div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+footer .redes-sociais {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+footer figure {
+    margin-right: 0;
+}
+footer figure a{
+    text-decoration: none;
+    color: #fff;;
+}
+footer ul {
+    border-top: solid 2px #969696 ;
+    color: #fff;
+    margin: 0;
+    padding: 2rem 0 0 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+    height: 100%;
+}
+footer li {
+    margin: 0 2rem 0 2rem;
+}
+
+@media screen and (max-width: 1030px){
+    header {
+        flex-direction: column;
+    }
+    header div {
+        width: 80vw;
+    }
+    header .logo {
+        justify-content: center;
+    }
+    nav li {
+        padding-top: 3vh;
+    }
+}
+@media screen and (max-width: 930px){
+    article {
+        height: 90vh
+    }
+    article div {
+        flex-direction: column-reverse;
+    }
+    article img {
+        height: 35vh;
+    }
+}
+@media screen and (max-width: 730px){
+    main {
+        width: 100%
+    }
+    section {
+        padding: 1rem
+    }
+    article {
+        height: 70vh
+    }
+    section article:nth-child(1) {
+        padding-top: 1rem;
+    }
+    article div {
+        margin-top: 2vh;
+    }
+    article img {
+        height: 30vh;
+    }
+    p {
+        font-size: 1rem;
+    }
+    footer div {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 560px) {
+    nav ul, footer ul {
+        font-size: 0.8rem;
+    }
+    section article:nth-child(1) img {
+        height: 30vh;
+    }
+}
+@media screen and (max-width: 460px) {
+    nav ul{
+        font-size: 0.7rem;
+    }
+    article {
+        height: 70vh
+    }
+}
+@media screen and (max-width: 430px) {
+    header {
+        border: none;
+    }
+    section article:nth-child(1) img {
+        height: 25vh;
+    }
+    article {
+        height: 70vh
+    }
+    article img {
+        height: 25vh;
+    }
+    section article:nth-child(1) img {
+        height: 25vh;
+    }
+    nav ul{
+        font-size: 0.6rem;
+    }
+    nav li {
+        padding-top: 3vh;
+        height: 5vh;
+        border-bottom: #b31d1d solid 2px;
+    }
+    svg {display: none;}
+}
+@media screen and (max-width: 400px) {
+    section article:nth-child(1) {
+        height: 40vh
+    } 
+    section article:nth-child(1) img {
+        display: none;
+    }
+    nav ul{
+        font-size: 0.5rem;
+    } 
+}
+@media screen and (max-width: 330px) {
+    section article:nth-child(1) {
+        height: 50vh
+    } 
+    section article:nth-child(3) {
+        height: 80vh
+    } 
+    h4 {
+        font-size: 0.8rem;
+    }
+    footer {
+        padding: 1rem;
+    }
+    footer .redes-sociais {
+        width: 100%
+    }
+}
